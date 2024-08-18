@@ -1,0 +1,68 @@
+/* LIGHT MODE */
+
+:root {
+  /* Colors */
+  --bg: #fff;
+  --bg-alt: #333;
+  --bg-alt-2: #f0f0f0;
+  --bg-transparent: #ffffffe8;
+  --border: 0.01rem solid #333;
+  --text: #333;
+  --text-alt: #fff;
+  --header-bg: #ffffff; /* Light mode header background */
+  --header-text: #333333; /* Light mode header text color */
+  --sun: url(../../firstWebsite/Icons/sun.png);
+}
+
+/* DARK MODE */
+
+:root.dark-mode {
+  --bg: #333333f5;
+  --bg-alt: #202124; /*colour switch box colour */
+  --bg-alt-2: #202124;
+  --bg-transparent: #333333f5;
+  --text: #fff;
+  --header-bg: #3c3d40; /* Light mode header background */
+  --header-text: #ffffff; /* Light mode header text color */
+  --moon: url(../../firstWebsite/Icons/moon.png);
+
+}
+
+/* COLOR MODE TOGGLE SLIDER (New Style) */
+
+#color-mode {
+  background: var(--bg-alt-2);
+  height: 2.5rem;
+  width: 4.5rem;
+  border-radius: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  margin-left: 20px; 
+}
+
+#toggle-button {
+  background-image: var(--sun);
+  background-size: cover;
+  cursor: pointer;
+  height: 2rem; 
+  width: 2rem;  
+  transition: transform 0.3s ease;
+}
+
+.dark-mode #toggle-button {
+  background-image: var(--moon);
+  
+}
+
+.dark-mode #color-mode {
+  justify-content: flex-end;
+}
+
+.box {
+  border: var(--border);
+  padding: 20px;
+  border-radius: 4px;
+  transition: border 0.3s ease;
+}

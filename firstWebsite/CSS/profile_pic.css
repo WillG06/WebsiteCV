@@ -1,0 +1,82 @@
+/* Profile card container styles */
+.profile-card-container {
+    position: absolute; 
+    top: 55%; 
+    left: 30%; 
+    transform: translate(-50%, -50%); 
+    z-index: 1; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    color: black;
+}
+
+/* Profile card styles */
+.profile-card {
+    background-color: rgba(242, 229, 216, 0.91); 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px; 
+    max-width: 250px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease, background-color 0.3s ease; 
+}
+
+/* Profile card hover effect */
+.profile-card:hover {
+    transform: scale(1.10); /*larger when hovered over */
+    background-color: rgb(235, 212, 189); 
+    
+}
+
+/* Profile line styles */
+.profile-line {
+    background-color: rgba(255, 255, 255, 0.8);  
+    padding: 1.5px; 
+    margin-bottom: 3%; 
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+}
+
+/* Paragraph styles within profile card */
+.profile-card p {
+    margin-bottom: 20px;
+}
+
+/* Profile image styles */
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Heading styles within profile card */
+.profile-card h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Social icons styles */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons a {
+    color: #333;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #0077b5; 
+}
