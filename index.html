@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <link rel="icon" type="image/svg+xml" href="./fileLinks/logo.svg">
+  
+  <title>Will Giles - Software Engineer Portfolio</title>
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/mainPage.css" />
+</head>
+
+<body>
+
+  <canvas id="interactiveBackground"></canvas>
+  <canvas id="particleSphere"></canvas>
+
+
+  <div id="cursorFollower"></div>
+
+
+  <button id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- nav -->
+  <header id="topbar" class="topbar">
+    <div class="container nav-inner">
+      <div class="logo">Will<span class="light">Giles</span></div>
+      <nav class="nav" id="mainNav">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <button class="hamburger" aria-label="menu" onclick="toggleMobileNav()">☰</button>
+    </div>
+  </header>
+
+
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="particles" id="particles"></div>
+  </section>
+
+  <!-- Main card area -->
+  <main class="container main-area">
+
+    <section class="profile-card-wrap">
+      <article class="profile-card">
+
+        <!-- profile image -->
+        <div class="profile-left">
+          <div class="profile-photo" id="profilePhoto">
+            <img src="./fileLinks/me.jpeg" alt="Profile photo" class="profile-img">
+          </div>
+        </div>
+
+
+        <div class="profile-right">
+          <small class="tag">HELLO</small>
+          <h1>I'm <strong>Will Giles</strong></h1>
+          <p class="subtitle">Aspiring Software Engineer | Cloud Engineer</p>
+
+          <div class="info-grid">
+            <div class="info-label">AGE</div>
+            <div class="info-val">19</div>
+            <div class="info-label">LOCATION</div>
+            <div class="info-val">Nottingham, England</div>
+            <div class="info-label">E-MAIL</div>
+            <div class="info-val">240115551@aston.ac.uk</div>
+            <div class="info-label">PHONE</div>
+            <div class="info-val">+44 7463 850903</div>
+            <div class="info-label">AVAILABILITY</div>
+            <div class="info-val"><span class="badge">Studying</span></div>
+          </div>
+
+          <div class="card-footer">
+            <div class="socials">
+
+              <a href="https://github.com/WillG06" aria-label="github" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://linkedin.com/in/williamedwardgiles" aria-label="linkedin" target="_blank"><i
+                  class="fab fa-linkedin-in"></i></a>
+              <a href="https://instagram.com/willg_o6" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+              <a href="mailto:240115551@aston.ac.uk" aria-label="email"><i class="fas fa-envelope"></i></a>
+
+            </div>
+          </div>
+
+        </div>
+      </article>
+
+      <div class="download-wrap">
+        <a class="btn btn-outline" href="/fileLinks/WillGilesCV.pdf" id="downloadResume">
+          <i class="fas fa-download" style="margin-right: 8px;"></i> Download Resume
+        </a>
+      </div>
+
+    </section>
+
+    <!-- About -->
+    <section id="about" class="content-section">
+      <h2 class="section-title">About Me</h2>
+      <p class="about-text shiny-text">
+        Hello! I'm Will Giles, an aspiring Software Engineer currently studying Computer Science at Aston University.
+      </p>
+      <p class="about-text">
+        Aspiring Software Engineer/ Cloud Engineer | Computer
+        Science Student at Aston University | Eager to learn
+        and grow in this Industry.<br><br>
+
+        Dynamic software engineer proficient in Java, Python,
+        JavaScript, experienced in full-stack development and
+        system design. Adaptable, collaborative, and resilient
+        under pressure, with a strong focus on delivering highquality solutions and continuous learning.
+
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="content-section">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3><i class="fas fa-code" style="margin-right: 8px;"></i>Programming</h3>
+          <p>Strong foundation in multiple OOp programming languages</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3><i class="fas fa-layer-group" style="margin-right: 8px;"></i>Full-Stack</h3>
+          <p>Building end-to-end software applications with modern frameworks</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Frontend</span>
+            <span class="skill-tag">Backend</span>
+            <span class="skill-tag">APIs</span>
+
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3><i class="fas fa-project-diagram" style="margin-right: 8px;"></i>System Design</h3>
+          <p>Architecting scalable and efficient software solutions</p>
+          <div class="skill-tags">
+            <!--<span class="skill-tag">Architecture</span>-->
+            <span class="skill-tag">Scalability</span>
+            <span class="skill-tag">Performance</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3><i class="fas fa-computer" style="margin-right: 8px;"></i>Website Development</h3>
+          <p>Exploring cloud platforms and modern infrastructure</p>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">JavaScript</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="content-section">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div class="project-content">
+            <h3>Portfolio Website</h3>
+            <p> A modern, responsive portfolio website showcasing my skills and projects</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-database"></i>
+          </div>
+          <div class="project-content">
+            <h3>Data Management System</h3>
+            <p>Full-stack application for managing and analysing data with a RESTful API backend.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">REST API</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-computer"></i>
+          </div>
+          <div class="project-content">
+            <h3>Uni Team Project</h3>
+            <p>Currently developing a full-stack ecommerce Car Rental website named Motiv. in a collaborative effort.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">GitHub</span>
+              <span class="tech-tag">Git</span>
+              <span class="tech-tag">Agile</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-gamepad"></i>
+          </div>
+          <div class="project-content">
+            <h3>Mini 2d Game</h3>
+            <p>You are able to play my individually created 2d, puzzle game with my own designed grapical interface</p>
+            <div class="project-tech">
+              <span class="tech-tag">GitHub</span>
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">OOp</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="content-section">
+      <h2 class="section-title">Education & Experience</h2>
+
+      <div class="timeline-item">
+        <h3>Computer Science Student</h3>
+        <p class="timeline-date"><i class="fas fa-graduation-cap" style="margin-right: 6px;"></i>Aston University</p>
+        <p>Pursuing a degree in Computer Science with a focus on software engineering, algorithms, and cloud computing.
+          Consistently demonstrating strong academic performance and practical application of concepts through
+          coursework and projects.</p>
+        <div class="grade-highlight">
+          <i class="fas fa-award" style="margin-right: 6px;"></i>Grade Achieved: In Progress (Year 2)
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Bartender & Waiter</h3>
+        <p class="timeline-date"><i class="fas fa-briefcase" style="margin-right: 6px;"></i>Previous Experience</p>
+        <p>Developed strong interpersonal and customer service skills while working in fast-paced environments. Honed
+          abilities in teamwork, communication, and working under pressure—skills that translate directly to
+          collaborative software development and professional environments.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Continuous Learning & Development</h3>
+        <p class="timeline-date"><i class="fas fa-rocket" style="margin-right: 6px;"></i>Constant</p>
+        <p>Actively expanding knowledge through personal projects, degree modules, and staying current with industry
+          trends. Committed to learning new technologies and best practices in software development, cloud engineering,
+          and modern development methodologies.</p>
+      </div>
+    </section>
+
+
+    <section id="contact" class="content-section">
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="about-text" style="margin-bottom: 32px;">
+        I'm always open to new opportunities, collaborations, and conversations. Feel free to reach out!
+      </p>
+      <div class="skills-grid">
+        <div class="skill-card" style="text-align: center;">
+          <h3><i class="fas fa-envelope" style="color: var(--primary); font-size: 32px; margin-bottom: 12px;"></i></h3>
+          <h3 style="font-size: 16px; margin-bottom: 8px;">Email</h3>
+          <a href="mailto:240115551@aston.ac.uk"
+            style="color: #666; text-decoration: none; font-size: 14px;">240115551@aston.ac.uk</a>
+        </div>
+        <div class="skill-card" style="text-align: center;">
+          <h3><i class="fas fa-phone" style="color: var(--primary); font-size: 32px; margin-bottom: 12px;"></i></h3>
+          <h3 style="font-size: 16px; margin-bottom: 8px;">Phone</h3>
+          <a href="tel:+447463850903" style="color: #666; text-decoration: none; font-size: 14px;">+44 7463 850903</a>
+        </div>
+        <div class="skill-card" style="text-align: center;">
+          <h3><i class="fab fa-linkedin" style="color: var(--primary); font-size: 32px; margin-bottom: 12px;"></i></h3>
+          <h3 style="font-size: 16px; margin-bottom: 8px;">LinkedIn</h3>
+          <a href="https://linkedin.com/in/williamedwardgiles" target="_blank"
+            style="color: #666; text-decoration: none; font-size: 14px;">Connect with me</a>
+        </div>
+        <div class="skill-card" style="text-align: center;">
+          <h3><i class="fab fa-github" style="color: var(--primary); font-size: 32px; margin-bottom: 12px;"></i></h3>
+          <h3 style="font-size: 16px; margin-bottom: 8px;">GitHub</h3>
+          <a href="https://github.com/WillG06" target="_blank"
+            style="color: #666; text-decoration: none; font-size: 14px;">View Featured Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <small>© <span id="year"></span> Will Giles - Portfolio Website CV</small>
+    </footer>
+
+  </main>
+
+  <script src="js/mainPage.js"></script>
+</body>
+
+</html>

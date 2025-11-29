@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+
+  <circle cx="100" cy="100" r="90" fill="#e26b6b"/>
+  <circle cx="100" cy="100" r="80" fill="#2f3a3f"/>
+  
+  <text x="100" y="130" font-family="Montserrat, sans-serif" font-size="70" font-weight="800" fill="#ffffff" text-anchor="middle">WG</text>
+</svg>
