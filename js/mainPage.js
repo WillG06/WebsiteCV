@@ -445,11 +445,11 @@
   dl && dl.addEventListener('click', function (e) {
     e.preventDefault();
 
-    const cvPath = '/fileLinks/WillGilesCV.pdf';
+    const cvPath = 'fileLinks/WillGilesCV.pdf';
 
     const a = document.createElement('a');
     a.href = cvPath;
-    a.download = '/fileLinks/WillGilesCV.pdf';
+    a.download = 'WillGilesCV.pdf';
     document.body.appendChild(a);
     a.click();
     a.remove();
